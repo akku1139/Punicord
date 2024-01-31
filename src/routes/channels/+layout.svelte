@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 import { readable } from "svelte/store";
 
 export const socketStore = readable({}, set => {
@@ -11,6 +11,11 @@ export const socketStore = readable({}, set => {
 
     return () => { socket.close() };
 });
-</script>
+</script> -->
+
+<style>
+@import './main.css';
+</style>
+
 
 <slot />
