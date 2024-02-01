@@ -13,6 +13,10 @@ export const socketStore = readable({}, set => {
 });
 </script> -->
 
+<script lang="ts">
+import Servers from "./Servers.svelte";
+</script>
+
 <style>
 @import './main.css';
 </style>

@@ -17,10 +17,7 @@ localStrageにusersとかloginsとか作って
       "username": "akku",
       "avatar": "12345", // 多分cdnのidだと思う
       "token": "abcdefg",
-
-      "type": "bot",
-      // or
-      "bot": false,
+      "type": "bot", // user bot bot-oauth
     },
     ...
   ]
