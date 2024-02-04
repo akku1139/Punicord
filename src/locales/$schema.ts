@@ -1,4 +1,4 @@
-type Schema = {
-}
-
-export default Schema;
+export type Schema = {
+  langname: string;
+  langname_en: string;
+};
