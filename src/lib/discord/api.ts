@@ -9,6 +9,6 @@ export async function api(method: "GET"|"POST"|"DELETE"|"PATCH", endpoint: strin
         // UA: 普通ユーザーなら問題ないかなぁ?
       },
       method: method,
-    }
-  )
+    },
+  );
 }
