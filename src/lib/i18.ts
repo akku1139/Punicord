@@ -1,7 +1,19 @@
-import locales from "../locales/_index.ts";
+import { writable, derived } from "svelte/store";
 
-export let lang = "ja";
+import en from "../locales/en.ts";
+import ja from "../locales/ja.ts";
 
-export function t(name: string): string {
-  return locales[lang][name];
-}
+const locales = {
+  en: en,
+  ja: ja,
+};
+type langs = keyof typeof locales;
+
+export const lang = writable<langs>("en");
+
+export const t = derived(
+  lang,
+  ($lang) =>
+    (msg: keyof typeof locales[langs]) =>
+      locales[$lang][msg],
+);
