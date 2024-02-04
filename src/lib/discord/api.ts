@@ -1,6 +1,6 @@
 const APIVersion = 10;
 
-export async function api(method: "GET"|"POST"|"DELETE"|"PATCH", endpoint: string): Response {
+export async function api(method: "GET"|"POST"|"DELETE"|"PATCH", endpoint: string): Promise<Response> {
   return fetch(
     "https://discord.com/api/v"+APIVersion+"/"+endpoint,
     {
